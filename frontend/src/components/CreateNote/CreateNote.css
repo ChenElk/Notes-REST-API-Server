@@ -1,0 +1,25 @@
+/* Create button */
+button[name="add_new_note"] {
+  display: block;
+  margin: 16px auto 28px;
+  background: linear-gradient(135deg, #8f6ca0, #6d4b7a);
+  color: white;
+  box-shadow: 0 6px 18px rgba(90, 63, 95, 0.35);
+}
+
+button[name="add_new_note"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(90, 63, 95, 0.45);
+}
+
+/* Save new note */
+button[name="text_input_save_new_note"] {
+  background: #297854;
+  color: white;
+}
+
+/* Cancel new note */
+button[name="text_input_cancel_new_note"] {
+  background: #77707c;
+  color: white;
+}

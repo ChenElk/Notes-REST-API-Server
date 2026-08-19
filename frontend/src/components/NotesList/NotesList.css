@@ -1,0 +1,122 @@
+
+.note {
+  background: linear-gradient(135deg, #7a587e, #5a3f5f);
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 14px;
+  max-width: 650px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* title */
+.note h2 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* author */
+.note small {
+  display: block;
+  margin-bottom: 5px;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+/* content */
+.note p {
+  line-height: 1.4;
+  font-size: 15px;
+  color: #f5f5f5;
+}
+
+/* General buttons */
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  margin: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+
+
+/* Edit button */
+button[data-testid^="edit-"],
+button[name^="edit-"] {
+  background: #ffffff;
+  color: #5a3f5f;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+button[data-testid^="edit-"]:hover,
+button[name^="edit-"]:hover {
+  background: #f2e8f5;
+  transform: translateY(-1px);
+}
+
+/* Delete button */
+button[data-testid^="delete-"],
+button[name^="delete-"] {
+  background: #bb0f45;
+  color: white;
+  box-shadow: 0 4px 12px rgba(217, 79, 100, 0.35);
+}
+
+button[data-testid^="delete-"]:hover,
+button[name^="delete-"]:hover {
+  background: #bb0f45;
+  transform: translateY(-1px);
+}
+
+/* Save / Cancel buttons */
+button[data-testid^="text_input_save-"],
+button[name^="text_input_save"] {
+  background: #297854;
+  color: white;
+}
+
+button[data-testid^="text_input_cancel-"],
+button[name^="text_input_cancel"] {
+  background: #77707c;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.notification {
+  width: fit-content;
+  min-width: 260px;
+  margin: 18px auto 20px;
+  padding: 12px 24px;
+
+  border-radius: 14px;
+  background: rgba(122, 88, 126, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  color: #e9deee;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(8px);
+}
+
+@media (prefers-color-scheme: light) {
+  .notification {
+    background: #f1e7f4;
+    border: 1px solid #d7c4dd;
+    color: #5a3f5f;
+    box-shadow: 0 6px 18px rgba(90, 63, 95, 0.18);
+  }
+}

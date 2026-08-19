@@ -1,0 +1,38 @@
+
+/* Pagination styles -Our implemetation*/
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;  /* spacing between buttons */
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.pagination li button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2c2c2c;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* hover */
+.pagination li button:hover {
+  background-color: #444;
+}
+
+/* active page */
+.pagination li button.active {
+  background-color: #7a587e;
+  font-weight: bold;
+}
+
+/* disabled */
+.pagination li button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
